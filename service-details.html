@@ -263,7 +263,7 @@
                                             class="fas fa-arrow-right"></i></span></li>
                             </ul>
                         </div>
-                        <div class="widget widget_download">
+                        <!-- <div class="widget widget_download">
                             <h2 class="widget_title text-white">Download</h2>
                             <div class="download-widget-wrap">
                                 <div class="download-item">
@@ -289,8 +289,43 @@
                                                 class="fas fa-arrow-right"></i></a></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="widget widget_banner">
+                        </div> -->
+                        
+                        <!-- Lead Capture Enquiry Form Widget -->
+                        <!-- <div class="widget widget_lead_form p-4 rounded-3 text-white mb-4" style="background: #111827; border: 1px solid rgba(255, 192, 0, 0.3);">
+                            <h3 class="widget_title text-white mb-2" style="font-size: 20px;"><i class="fas fa-paper-plane text-warning me-2"></i>Quick Service Enquiry</h3>
+                            <p class="small text-white-50 mb-3">Get a custom quote & availability for this service within minutes.</p>
+                            <form id="service-sidebar-form" onsubmit="handleServiceLead(event, 'sidebar')">
+                                <div class="form-group mb-2">
+                                    <input type="text" class="form-control style2 py-2" name="name" placeholder="Your Full Name *" required style="height: 44px; font-size: 14px;">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <input type="email" class="form-control style2 py-2" name="email" placeholder="Email Address *" required style="height: 44px; font-size: 14px;">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <input type="tel" class="form-control style2 py-2" name="phone" placeholder="Phone / WhatsApp *" required style="height: 44px; font-size: 14px;">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <select name="service" class="form-select style2 py-2" style="height: 44px; font-size: 14px; color: #17191F;">
+                                        <option value="City Transfer">City Transfer</option>
+                                        <option value="Airport Transfer">Airport Transfer</option>
+                                        <option value="Regular Transport">Regular Transport</option>
+                                        <option value="Address Pickup">Address Pickup</option>
+                                        <option value="Tour Transport">Tour Transport</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <textarea name="notes" class="form-control style2 p-2" placeholder="Ride Details / Pickup Date..." style="min-height: 70px; font-size: 14px;"></textarea>
+                                </div>
+                                <button type="submit" class="th-btn style4 w-100 py-2 font-weight-bold" style="border-radius: 8px; background-color: #FFC000; color: #111827;">
+                                    REQUEST FREE QUOTE <i class="fas fa-arrow-right ms-1"></i>
+                                </button>
+                            </form>
+                            <div id="sidebar-lead-msg" class="alert alert-success mt-3 mb-0 d-none p-2 small text-center" role="alert">
+                                Enquiry submitted! We will call you shortly.
+                            </div>
+                        </div> -->
+                        <!-- <div class="widget widget_banner">
                             <div class="widget-banner-bg" data-bg-src="assets/img/widget/widget-banner.png"
                                 data-overlay="title" data-opacity="8"></div>
                             <div class="widget-banner text-center">
@@ -301,7 +336,7 @@
                                     <p class="box-text">Save up to <span class="text-title">60% off</span></p>
                                 </div><a href="blog-details.html" class="th-btn style3">GET A QUOTE</a>
                             </div>
-                        </div>
+                        </div> -->
                     </aside>
                 </div>
                 <div class="col-xl-8 col-lg-7">
@@ -383,7 +418,48 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
+                        <!-- Main Content Lead Capture Banner -->
+                        <div class="service-enquiry-banner p-4 p-md-5 rounded-3 mt-4 mb-4" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #ffffff; border-left: 5px solid #FFC000;">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 mb-3 mb-lg-0">
+                                    <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase mb-2"><i class="fas fa-bolt me-1"></i> Instant Service Quote</span>
+                                    <h3 class="h4 text-white mb-2 fw-bold">Need Custom Transport for This Service?</h3>
+                                    <p class="text-white-50 mb-0 small">Enter your contact details below and our team will get back to you with transparent pricing & reservation details within 15 minutes.</p>
+                                </div>
+                                <div class="col-lg-5 text-lg-end">
+                                    <a href="tel:9737091852" class="btn btn-warning py-3 px-4 fw-bold shadow-sm" style="background-color: #FFC000; border: none; color: #111827; border-radius: 10px;">
+                                        <i class="fas fa-phone-alt me-2"></i>Call Now: 9737091852
+                                    </a>
+                                </div>
+                            </div>
+                            <hr style="border-color: rgba(255,255,255,0.15);" class="my-4">
+                            <form id="service-main-form" onsubmit="handleServiceLead(event, 'main')">
+                                <div class="row gy-3">
+                                    <div class="col-md-4">
+                                        <label class="small text-white-50 fw-bold mb-1"><i class="fas fa-user text-warning me-1"></i> Full Name *</label>
+                                        <input type="text" name="name" class="form-control" placeholder="John Doe" required style="background: #ffffff; color: #111827; border-radius: 8px;">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="small text-white-50 fw-bold mb-1"><i class="fas fa-phone text-warning me-1"></i> Phone / WhatsApp *</label>
+                                        <input type="tel" name="phone" class="form-control" placeholder="+64 21 123 4567" required style="background: #ffffff; color: #111827; border-radius: 8px;">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="small text-white-50 fw-bold mb-1"><i class="fas fa-envelope text-warning me-1"></i> Email Address *</label>
+                                        <input type="email" name="email" class="form-control" placeholder="john@example.com" required style="background: #ffffff; color: #111827; border-radius: 8px;">
+                                    </div>
+                                    <div class="col-12 mt-3 text-end">
+                                        <button type="submit" class="th-btn style4 py-3 px-5 text-uppercase fw-bold" style="border-radius: 8px;">
+                                            SUBMIT SERVICE INQUIRY <i class="fas fa-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="main-lead-msg" class="alert alert-success mt-3 mb-0 d-none p-3 text-center fw-bold" role="alert" style="background-color: #d4edda; color: #155724;">
+                                <i class="fas fa-check-circle me-2"></i> Thank you! Your enquiry has been received. Our team will contact you shortly.
+                            </div>
+                        </div>
+</div>
     </section>
         <footer class="footer-wrapper footer-default">
         <div class="shape-mockup footer-bg-shape1 jump" data-bottom="12%" data-left="4%">
